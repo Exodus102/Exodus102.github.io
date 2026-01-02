@@ -968,7 +968,7 @@ export default function Home() {
             Skills
           </h1>
         </PointerHighlight>
-        <br /> <br /> <br /> <br />
+        <br /> <br />
         <div className="w-full flex justify-center">
           <InfiniteMovingCards items={items} />
         </div>
