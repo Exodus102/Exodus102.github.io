@@ -53,7 +53,7 @@ export const InfiniteMovingCards = ({
     >
       <ul
         ref={scrollerRef}
-        className="flex flex-nowrap gap-4 py-4 w-max min-w-full"
+        className="flex flex-nowrap py-4 w-max min-w-full"
         style={{ willChange: "transform" }}
       >
         {items.map((item, idx) => (
