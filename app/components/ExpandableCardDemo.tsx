@@ -69,7 +69,7 @@ export function ExpandableCardDemo() {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
+              className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-neutral-900 dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
             >
               <motion.div layoutId={`image-${active.title}-${id}`}>
                 <img
@@ -86,13 +86,13 @@ export function ExpandableCardDemo() {
                   <div className="">
                     <motion.h3
                       layoutId={`title-${active.title}-${id}`}
-                      className="font-bold text-neutral-700 dark:text-neutral-200"
+                      className="font-bold text-neutral-200 dark:text-neutral-200"
                     >
                       {active.title}
                     </motion.h3>
                     <motion.p
                       layoutId={`description-${active.description}-${id}`}
-                      className="text-neutral-600 dark:text-neutral-400"
+                      className="text-neutral-400 dark:text-neutral-400"
                     >
                       {active.description}
                     </motion.p>
@@ -113,7 +113,7 @@ export function ExpandableCardDemo() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="text-neutral-600 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
+                    className="text-neutral-400 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
                   >
                     {typeof active.content === "function"
                       ? active.content()
@@ -131,7 +131,7 @@ export function ExpandableCardDemo() {
             layoutId={`card-${card.title}-${id}`}
             key={`card-${card.title}-${id}`}
             onClick={() => setActive(card)}
-            className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
+            className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-neutral-800 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
           >
             <div className="flex gap-4 flex-col md:flex-row ">
               <motion.div layoutId={`image-${card.title}-${id}`}>
@@ -146,7 +146,7 @@ export function ExpandableCardDemo() {
               <div className="">
                 <motion.h3
                   layoutId={`title-${card.title}-${id}`}
-                  className="font-medium text-neutral-800 dark:text-neutral-200 text-center md:text-left"
+                  className="font-medium text-neutral-200 dark:text-neutral-200 text-center md:text-left"
                 >
                   {card.title}
                 </motion.h3>

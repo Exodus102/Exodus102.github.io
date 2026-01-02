@@ -803,7 +803,7 @@ export default function Home() {
                   key={`mobile-link-${idx}`}
                   href={item.link}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="relative text-neutral-600 dark:text-neutral-300"
+                  className="relative text-neutral-300 dark:text-neutral-300"
                 >
                   <span className="block">{item.name}</span>
                 </a>
@@ -814,13 +814,13 @@ export default function Home() {
       </div>
       <div
         id="home"
-        className="w-full lg:h-screen text-white p-5 flex flex-col-reverse lg:flex-row px-20 pt-22 lg:pt-0"
+        className="w-full lg:h-screen text-white p-5 flex flex-col-reverse lg:flex-row lg:px-20 pt-22 lg:pt-0"
       >
         <div className="w-full flex flex-col justify-center text-neutral-500">
           <span className="text-3xl lg:text-2xl text-center lg:text-left lg:pt-0 pt-10">
             Hello!
           </span>
-          <h1 className="text-center lg:text-left text-6xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 font-sans font-bold">
+          <h1 className="text-center lg:text-left text-5xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 font-sans font-bold">
             I'm Jenrick Aran
           </h1>
           <span className="mt-4 text-xl lg:text-3xl text-center lg:text-left">
@@ -929,7 +929,7 @@ export default function Home() {
       </div>
       <div
         id="about"
-        className="w-full text-white p-5 px-20 flex flex-col items-center justify-center pt-20 overflow-x-hidden"
+        className="w-full text-white p-5 lg:px-20 flex flex-col items-center justify-center pt-20"
       >
         <h1 className="text-5xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 font-sans font-bold">
           About me
@@ -945,7 +945,7 @@ export default function Home() {
             <PointerHighlight
               showPointer={false}
               pointerClassName="text-green-500"
-              rectangleClassName="bg-green-100 dark:bg-green-900 border-green-300 dark:border-green-700"
+              rectangleClassName="bg-green-900 dark:bg-green-900 border-green-700 dark:border-green-700"
             >
               <span className="text-white font-sans font-bold relative z-10">
                 University of Rizal System Binangonan Campus
@@ -962,7 +962,7 @@ export default function Home() {
         <br /> <br /> <br /> <br /> <br /> <br />
         <PointerHighlight
           pointerClassName="text-yellow-500"
-          rectangleClassName="bg-neutral-200 dark:bg-neutral-700 border-neutral-300 dark:border-neutral-600"
+          rectangleClassName="bg-neutral-700 dark:bg-neutral-700 border-neutral-600 dark:border-neutral-600"
         >
           <h1 className="text-5xl lg:text-7xl text-white font-sans font-bold relative z-10">
             Skills
@@ -985,11 +985,11 @@ export default function Home() {
       </div>
       <div
         id="contact"
-        className="w-full h-screen text-white p-5 px-20 flex flex-col items-center justify-center"
+        className="w-full h-screen text-white p-5 lg:px-20 flex flex-col items-center justify-center"
       >
         <PointerHighlight
           pointerClassName="text-yellow-500"
-          rectangleClassName="bg-neutral-200 dark:bg-neutral-700 border-neutral-300 dark:border-neutral-600"
+          rectangleClassName="bg-neutral-700 dark:bg-neutral-700 border-neutral-600 dark:border-neutral-600"
         >
           <h1 className="text-5xl lg:text-7xl text-white font-sans font-bold relative z-10">
             Contact Me
@@ -1010,7 +1010,7 @@ export default function Home() {
             aria-label="Send email"
           >
             <svg
-              className="h-10 w-10 fill-current text-black dark:text-gray-300"
+              className="h-10 w-10 fill-current text-gray-300 dark:text-gray-300"
               role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
@@ -1028,7 +1028,7 @@ export default function Home() {
             aria-label="Open Messenger"
           >
             <svg
-              className="h-10 w-10 fill-current text-black dark:text-gray-300"
+              className="h-10 w-10 fill-current text-gray-300 dark:text-gray-300"
               role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
