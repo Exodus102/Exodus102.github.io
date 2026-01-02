@@ -969,7 +969,7 @@ export default function Home() {
           </h1>
         </PointerHighlight>
         <br /> <br /> <br /> <br />
-        <div className="w-full">
+        <div className="w-full flex justify-center">
           <InfiniteMovingCards items={items} />
         </div>
       </div>
@@ -977,10 +977,10 @@ export default function Home() {
         id="projects"
         className="w-full h-screen text-white p-5 pt-22 flex flex-col items-center"
       >
-        <h1 className="text-5xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 font-sans font-bold">
+        <span className="text-5xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 font-sans font-bold">
           Projects
-        </h1>
-        <br />
+        </span>
+        <br /> <br /> <br /> <br />
         <ExpandableCardDemo />
       </div>
       <div

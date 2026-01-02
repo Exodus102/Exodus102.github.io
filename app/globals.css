@@ -1,6 +1,8 @@
 @import "tailwindcss";
-html {
+html, body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 @theme inline {
