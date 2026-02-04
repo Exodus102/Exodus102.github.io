@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" /> -->
+    <meta name="generator" content={Astro.generator} />
+    <title>Jenrick | Portfolio</title>
+  </head>
+  <body class="dark:bg-[#212121]">
+    <slot />
+    <script>
+      const toggle = document.getElementById("theme-toggle");
+      const html = document.documentElement;
+
+      if (localStorage.theme === "dark") {
+        html.classList.add("dark");
+      }
+
+      if (toggle) {
+        toggle.addEventListener("click", () => {
+          html.classList.toggle("dark");
+          localStorage.theme = html.classList.contains("dark")
+            ? "dark"
+            : "light";
+        });
+      }
+    </script>
+  </body>
+</html>
+
+<style>
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+  }
+</style>
